@@ -38,7 +38,4 @@ Project Descriptions:
     integrate backend with frontend, and ensure efficient data retrieval. 
     Schedule meetings throughout the week to ensure everyone is on the same page.
 
-    Name: 
-    Role:
-    Issues to work on:
     
