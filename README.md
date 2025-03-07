@@ -1,7 +1,7 @@
 # **Weathering App**
 
 ## **Project Name:** Weathering App  
-## **Group:** 30  
+## **Group:** 5  
 Project Descriptions: 
 
     Problem: Unexpected weather changes or storm alerts can disrupt plans.
@@ -38,7 +38,4 @@ Project Descriptions:
     integrate backend with frontend, and ensure efficient data retrieval. 
     Schedule meetings throughout the week to ensure everyone is on the same page.
 
-    Name: 
-    Role:
-    Issues to work on:
     
