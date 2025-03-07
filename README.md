@@ -30,8 +30,7 @@ Project Descriptions:
     Name: Tina Zhang
     Role: UI Designer, Time-Tracker, Reviewer
     Issues to work on: create a web-page that is user friendly and visually attractive for users,
-    schedule deadline and ensure each member complete their part before the due date,
-    give weekly report on completed work and remaining tasks to do, regularly review the code and suggest improvements
+    schedule deadline and ensure each member complete their part before the due date, regularly review code and suggest improvements
 
     Name: Jacob Rollins
     Role: Backend, Meetings Scheduler
