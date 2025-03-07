@@ -13,6 +13,7 @@ Project Descriptions:
         Severe Weather Alerts – Notify users about storms, hurricanes, heatwaves, etc.
         Customizable Themes & Widgets – Personalize the app’s interface with different themes.
         Weather-Based Activity Suggestions – Recommend outdoor activities based on the forecast.
+        Weather preparedness - suggest items to bring depending on weather(e.g. umbrella(when it rains), hat and sunscreen(when its sunny))
     
     Why This Project?
         Weather conditions play an important role in daily life, affecting travel, outdoor activities, health, and safety. 
