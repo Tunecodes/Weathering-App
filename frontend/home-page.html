@@ -8,43 +8,136 @@
   </head>
   <body>
     <div class="container">
+      <!-- Sidebar -->
       <div class="sidebar-con">
-        <div class="sidebar">Side Bar</div>
+        <div class="sidebar">
+          <h3>Menu</h3>
+          <ul>
+            <li>Home</li>
+            <li>Weather</li>
+            <li>Forecast</li>
+            <li>Settings</li>
+          </ul>
+        </div>
       </div>
+
+      <!-- Main Content -->
       <div class="body">
         <div class="body-grid">
+          <!-- Search Box -->
           <div class="search-con">
-            <input id="search" placeholder="search" />
+            <input id="search" type="text" placeholder="Search for a city..." />
           </div>
+
+          <!-- Current Weather Section -->
           <div class="city-con">
-            <div id="location">City, Date, and Time</div>
-            <div id="temperature">Temperature</div>
+            <div id="location">
+              <h2>City Name</h2>
+              <p>Date & Time</p>
+            </div>
+            <div id="temperature">
+              <h2>25°C</h2>
+              <p>Sunny</p>
+            </div>
           </div>
+
+          <!-- Hourly Weather Report -->
           <div class="tody-con">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
+            <div>
+              <strong>08:00</strong> <br />
+              18°C <br />
+              Cloudy
+            </div>
+            <div>
+              <strong>10:00</strong> <br />
+              20°C <br />
+              Partly Cloudy
+            </div>
+            <div>
+              <strong>12:00</strong> <br />
+              23°C <br />
+              Sunny
+            </div>
+            <div>
+              <strong>14:00</strong> <br />
+              25°C <br />
+              Sunny
+            </div>
+            <div>
+              <strong>16:00</strong> <br />
+              24°C <br />
+              Partly Cloudy
+            </div>
           </div>
+
+          <!-- Air Quality & Weather Alerts -->
           <div class="air-con">
-            <div id="aircondition">aircondition</div>
-            <div id="alert">Weather Alert</div>
+            <div id="aircondition">
+              <h3>Air Quality</h3>
+              <p><strong>Location:</strong> City Name</p>
+              <p><strong>Recorded At:</strong> March 24, 2025 - 10:00 AM</p>
+              <p><strong>Pollutants:</strong></p>
+              <ul>
+                <li>PM2.5: 35 µg/m³</li>
+                <li>PM10: 50 µg/m³</li>
+                <li>Ozone (O3): 30 ppb</li>
+              </ul>
+              <p><strong>Humidity:</strong> 65%</p>
+              <p><strong>Wind Speed:</strong> 12 km/h</p>
+              <p><strong>Wind Direction:</strong> NW</p>
+              <p><strong>Pressure:</strong> 1012 hPa</p>
+            </div>
+            <div id="alert">
+              <h3>Weather Alert</h3>
+              <p><strong>Alert Type:</strong> Heatwave</p>
+              <p><strong>Severity:</strong> Moderate</p>
+              <p><strong>Description:</strong> High temperatures expected.</p>
+              <p><strong>Issued At:</strong> March 24, 2025 - 10:00 AM</p>
+              <p><strong>Expires At:</strong> March 25, 2025 - 6:00 PM</p>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- 7-Day Weather Forecast -->
       <div class="forecast">
         <div class="seven-days">
-          <div>day 1</div>
-          <div>day 2</div>
-          <div>day 3</div>
-          <div>day 4</div>
-          <div>day 5</div>
-          <div>day 6</div>
-          <div>day 7</div>
-
+          <div class="day">
+            <h4>Monday</h4>
+            <p>22°C</p>
+            <p>Sunny</p>
+          </div>
+          <div class="day">
+            <h4>Tuesday</h4>
+            <p>24°C</p>
+            <p>Cloudy</p>
+          </div>
+          <div class="day">
+            <h4>Wednesday</h4>
+            <p>20°C</p>
+            <p>Rainy</p>
+          </div>
+          <div class="day">
+            <h4>Thursday</h4>
+            <p>23°C</p>
+            <p>Sunny</p>
+          </div>
+          <div class="day">
+            <h4>Friday</h4>
+            <p>25°C</p>
+            <p>Partly Cloudy</p>
+          </div>
+          <div class="day">
+            <h4>Saturday</h4>
+            <p>27°C</p>
+            <p>Sunny</p>
+          </div>
+          <div class="day">
+            <h4>Sunday</h4>
+            <p>26°C</p>
+            <p>Cloudy</p>
+          </div>
         </div>
-   
       </div>
     </div>
   </body>
