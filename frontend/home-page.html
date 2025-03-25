@@ -14,9 +14,9 @@
           <h3>Menu</h3>
           <ul>
             <li>Home</li>
-            <li>Weather</li>
-            <li>Forecast</li>
-            <li>Settings</li>
+            <li>Activity</li>
+            <li>Cloth Suggestion</li>
+            <li>Theme Toggle</li>
           </ul>
         </div>
       </div>
@@ -26,7 +26,7 @@
         <div class="body-grid">
           <!-- Search Box -->
           <div class="search-con">
-            <input id="search" type="text" placeholder="Search for a city..." />
+            <img id="search-icon" src="/assets/search.png"><input id="search" type="text" placeholder="Search for a city..." />
           </div>
 
           <!-- Current Weather Section -->
@@ -36,37 +36,45 @@
               <p>Date & Time</p>
             </div>
             <div id="temperature">
-              <h2>25°C</h2>
-              <p>Sunny</p>
+              <div>
+                <h2>Sunny</h2>
+                <h2>77°F / 25°C</h2>
+              </div>
+              <img id="main-icon" src="/assets/sun.png" />
             </div>
           </div>
 
           <!-- Hourly Weather Report -->
           <div class="tody-con">
             <div>
-              <strong>08:00</strong> <br />
-              18°C <br />
-              Cloudy
+              <h3>8:00</h3>
+              <p>64°F / 18°C</p>
+              <p>Cloudy</p>
+              <img src="/assets/cloudy.png" />
             </div>
             <div>
-              <strong>10:00</strong> <br />
-              20°C <br />
-              Partly Cloudy
+              <h3>10:00</h3>
+              <p>68°F / 20°C</p>
+              <p>Partly Cloudy</p>
+              <img src="/assets/partly-cloudy.png" />
             </div>
             <div>
-              <strong>12:00</strong> <br />
-              23°C <br />
-              Sunny
+              <h3>12:00</h3>
+              <p>73°F / 23°C</p>
+              <p>Rain</p>
+              <img src="/assets/rain.png" />
             </div>
             <div>
-              <strong>14:00</strong> <br />
-              25°C <br />
-              Sunny
+              <h3>14:00</h3>
+              <p>23°F / -5°C</p>
+              <p>Snow</p>
+              <img src="/assets/snow.png" />
             </div>
             <div>
-              <strong>16:00</strong> <br />
-              24°C <br />
-              Partly Cloudy
+              <h3>16:00</h3>
+              <p>75°F / 24°C</p>
+              <p>Storm</p>
+              <img src="/assets/storm.png" />
             </div>
           </div>
 
@@ -102,40 +110,56 @@
       <!-- 7-Day Weather Forecast -->
       <div class="forecast">
         <div class="seven-days">
-          <div class="day">
-            <h4>Monday</h4>
-            <p>22°C</p>
-            <p>Sunny</p>
+          <div class="day" id="monday">
+            <div>
+              <h4>Monday</h4>
+              <p>64°F / 18°C</p>
+              <p>Sunny</p>
+            </div>
+            <img src="/assets/cloudy.png" />
           </div>
           <div class="day">
-            <h4>Tuesday</h4>
-            <p>24°C</p>
-            <p>Cloudy</p>
-          </div>
-          <div class="day">
-            <h4>Wednesday</h4>
-            <p>20°C</p>
-            <p>Rainy</p>
-          </div>
-          <div class="day">
-            <h4>Thursday</h4>
-            <p>23°C</p>
-            <p>Sunny</p>
-          </div>
-          <div class="day">
-            <h4>Friday</h4>
-            <p>25°C</p>
-            <p>Partly Cloudy</p>
-          </div>
-          <div class="day">
-            <h4>Saturday</h4>
-            <p>27°C</p>
-            <p>Sunny</p>
-          </div>
-          <div class="day">
-            <h4>Sunday</h4>
-            <p>26°C</p>
-            <p>Cloudy</p>
+            <div>
+              <h4>Tuesday</h4>
+              <p>32°F / 0°C</p>
+              <p>Snow</p>
+            </div>
+            <img src="/assets/snow.png" />
+          </div><div class="day">
+            <div>
+              <h4>Wednesday</h4>
+              <p>78°F / 26°C</p>
+              <p>Sunny</p>
+            </div>
+            <img src="/assets/sun.png" />
+          </div><div class="day">
+            <div>
+              <h4>Thursday</h4>
+              <p>65°F / 18°C</p>
+              <p>Rain</p>
+            </div>
+            <img src="/assets/rain.png" />
+          </div><div class="day">
+            <div>
+              <h4>Friday</h4>
+              <p>48°F / 9°C</p>
+              <p>Storm</p>
+            </div>
+            <img src="/assets/storm.png" />
+          </div><div class="day">
+            <div>
+              <h4>Saturday</h4>
+              <p>24°F / -4°C</p>
+              <p>Cloudy</p>
+            </div>
+            <img src="/assets/cloudy.png" />
+          </div><div class="day" id="sunday">
+            <div>
+              <h4>Sunday</h4>
+              <p>72°F / 22°C</p>
+              <p>Cloudy</p>
+            </div>
+            <img src="/assets/cloudy.png" />
           </div>
         </div>
       </div>
