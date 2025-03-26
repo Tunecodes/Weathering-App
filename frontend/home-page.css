@@ -5,13 +5,11 @@
   cursor: default;
 }
 
-
-
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr 2fr;
   height: 100vh;
-  color:white;
+  color: white;
 }
 
 /* ========== Sidebar Section ========== */
@@ -66,7 +64,7 @@
   cursor: auto;
   width: clamp(15rem, 35vw, 45rem);
   height: 2.5rem;
-  background-color: rgb(204,204,204);
+  background-color: rgb(204, 204, 204);
   border: none;
   border-radius: 0.5rem;
   padding-left: 10px;
@@ -102,7 +100,7 @@
   grid-template-columns: 1fr 2fr;
   height: 15rem;
   flex: 1;
-  background-color: rgb(204,204,204);
+  background-color: rgb(204, 204, 204);
   font-size: clamp(1em, 1vw, 2em);
 }
 
@@ -115,7 +113,7 @@
   gap: 1rem;
   justify-content: center;
   align-items: center;
-  background-color: rgb(204,204,204);
+  background-color: rgb(204, 204, 204);
   border-radius: 20px;
 }
 
@@ -144,7 +142,7 @@
 
 #aircondition,
 #alert {
-  background-color: rgb(204,204,204);
+  background-color: rgb(204, 204, 204);
   height: 15rem;
   flex: 1;
   font-size: clamp(1.1em, 1vw, 1.5em);
@@ -188,7 +186,280 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
-  background-color: rgb(204,204,204);
+  background-color: rgb(204, 204, 204);
+  padding-left: 2em;
+}
+
+.seven-days img {
+  justify-self: center;
+  width: 6em;
+}
+
+#monday {
+  border-radius: 20px 20px 0 0;
+}
+
+#sunday {
+  border-radius: 0 0 20px 20px;
+}
+/* ========== Global Styles ========== */
+* {
+  padding: 0;
+  margin: 0;
+  cursor: default;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr;
+  height: 100vh;
+  color: white;
+}
+
+/* ========== Sidebar Section ========== */
+.sidebar-con {
+  display: flex;
+  justify-content: center;
+  min-width: 15rem;
+}
+
+.sidebar {
+  justify-items: center;
+  width: auto;
+  height: 85%;
+  align-self: center;
+  background-color: rgb(204, 204, 204);
+  border-radius: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+.sidebar li {
+  font-size: 1rem;
+  padding: 0.3rem 0;
+  margin-top: 3rem;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+button {
+  background-color: rgb(204, 204, 204);
+  margin-left: 0.5em;
+  color: white;
+  border-radius: 5px;
+  border: white solid 1px;
+  font-size: 1.5em;
+  margin-right: 0.5em;
+}
+
+.side-icon {
+  width: 2em;
+}
+/* Hide the default checkbox */
+.toggle input {
+  display: none;
+}
+
+/* The switch container */
+.toggle {
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  position: relative;
+}
+
+/* The track (background) */
+.toggle .slider {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+}
+
+/* The moving knob */
+.toggle .slider::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+  transition: transform 0.3s;
+}
+
+/* When the checkbox is checked */
+.toggle input:checked + .slider {
+  background-color: #000000;
+}
+
+.toggle input:checked + .slider::before {
+  transform: translate(25px, -50%);
+}
+
+/* ========== Main Content Section ========== */
+.body-grid {
+  display: grid;
+  grid-template-rows: 1fr 3fr 2fr 4fr;
+  height: 100%;
+}
+
+.body-grid > div {
+  display: flex;
+}
+
+/* Search Bar */
+
+#search-icon {
+  width: 2em;
+  margin-right: 1rem;
+}
+
+.search-con {
+  justify-content: center;
+  align-items: center;
+}
+
+#search {
+  cursor: auto;
+  width: clamp(15rem, 35vw, 45rem);
+  height: 2.5rem;
+  background-color: rgb(204, 204, 204);
+  border: none;
+  border-radius: 0.5rem;
+  padding-left: 10px;
+}
+
+/* City and Temperature Section */
+.city-con {
+  padding: 1rem;
+  align-items: center;
+  gap: 3rem;
+}
+
+#location,
+#temperature {
+  justify-items: center;
+  align-items: center;
+}
+
+#main-icon {
+  margin-top: 1em;
+  width: clamp(7em, 10vw, 25em);
+}
+
+#location {
+  align-content: center;
+  height: 10rem;
+  flex: 0.65;
+  color: rgb(204, 204, 204);
+}
+
+#temperature {
+  display: grid;
+  border-radius: 20px;
+  grid-template-columns: 1fr 2fr;
+  height: 15rem;
+  flex: 1;
+  background-color: rgb(204, 204, 204);
+  font-size: clamp(1em, 1vw, 2em);
+}
+
+#temperature div {
+  margin-left: 1rem;
+}
+
+/* Hourly Forecast */
+.tody-con {
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(204, 204, 204);
+  border-radius: 20px;
+}
+
+.tody-con > div {
+  justify-items: center;
+  width: 6rem;
+  max-width: 10rem;
+  height: 10rem;
+  flex: 1;
+  border: rgb(255, 255, 255) dotted 3px;
+  white-space: nowrap;
+  border-radius: 20px;
+}
+
+.tody-con img {
+  margin-top: 0.5em;
+  width: clamp(5em, 5vw, 10em);
+}
+
+/* ========== Air Quality Section ========== */
+.air-con {
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#aircondition,
+#alert {
+  background-color: rgb(204, 204, 204);
+  height: 15rem;
+  flex: 1;
+  font-size: clamp(1.1em, 1vw, 1.5em);
+}
+
+#aircondition {
+  border-radius: 20px 0px 0px 20px;
+  padding: 1rem;
+}
+
+#aircondition ul {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+#aircondition li {
+  font-size: 0.9rem;
+  margin: 2px 0;
+}
+
+#alert {
+  border-radius: 0px 10px 10px 0px;
+  padding: 1rem;
+}
+
+/* ========== 7-Day Forecast Section ========== */
+.forecast {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.seven-days {
+  display: grid;
+  height: 85%;
+  width: clamp(20rem, 25vw, 35rem);
+}
+
+.seven-days > div {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  background-color: rgb(204, 204, 204);
   padding-left: 2em;
 }
 
