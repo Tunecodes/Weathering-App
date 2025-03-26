@@ -15,29 +15,50 @@
 }
 
 /* ========== Sidebar Section ========== */
-.sidebar-con {
-  display: flex;
-  justify-content: center;
-  min-width: 15rem;
-}
-
 .sidebar {
   width: 10rem;
-  height: 85%;
+  height: 100%;
   align-self: center;
-  border: black solid 1px;
-  color: black;
+  background-color: rgb(204,204,204);
+  color: white;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.sidebar h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .sidebar ul {
   list-style-type: none;
-  padding-left: 1rem;
+  padding-left: 0;
 }
 
 .sidebar li {
   font-size: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.sidebar li:last-child {
+  border-bottom: none;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
   padding: 0.3rem 0;
 }
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
 
 /* ========== Main Content Section ========== */
 .body-grid {
@@ -204,3 +225,39 @@
 #sunday {
   border-radius: 0 0 20px 20px;
 }
+
+/* ========== Activity Page ========== */
+.recents-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.5rem;
+}
+
+.subheading {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: lightgray;
+}
+
+.recent-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: clamp(20rem, 40vw, 50rem);
+    padding: 1rem;
+}
+
+.recent-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(204, 204, 204);
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
