@@ -109,8 +109,8 @@ button {
 /* ========== Main Content Section ========== */
 .body-grid {
   display: grid;
-  grid-template-rows: 1fr 3fr 2fr 4fr;
-  height: 100%;
+  grid-template-rows: 1fr 1fr 2fr;
+  height: 80%;
 }
 
 .body-grid > div {
@@ -180,6 +180,7 @@ button {
 
 /* Hourly Forecast */
 .tody-con {
+  display: flex;
   gap: 1rem;
   justify-content: center;
   align-items: center;
@@ -205,6 +206,7 @@ button {
 
 /* ========== Air Quality Section ========== */
 .air-con {
+  display: flex;
   padding: 1rem;
   justify-content: center;
   align-items: center;
@@ -271,4 +273,11 @@ button {
 
 #sunday {
   border-radius: 0 0 20px 20px;
+}
+
+.today-content-con{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding:1rem;
 }
