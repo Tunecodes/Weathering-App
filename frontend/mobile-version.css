@@ -1,0 +1,75 @@
+@media (max-width: 767px){
+    .container{
+      display: flex;
+      flex-direction: column;
+      grid-template-columns: none;
+      height: auto;
+      padding: 10px;
+      gap: 1.5rem;
+    }
+    /* ========== Sidebar Section ========== */
+    .sidebar{
+      order: -1;
+      width: 100%;
+    }
+    .sidebar ul{
+      display: flex;
+      justify-content: center;
+      padding: 0px;
+    }
+    .sidebar li{
+      margin: 10px;
+    }
+    /* ========== Main Content Section ========== */
+    .body-grid{
+      display: flex;
+      flex-direction: column;
+    }
+    #temperature{
+      height: 10rem;
+      width: 90%;
+    }
+    .today-content-con{
+      display: flex;
+      flex-direction: row;
+    }
+    .tody-con{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      order: 2; 
+    }
+    .tody-con > div {
+      padding: 10%;
+      margin: 15px;
+    }
+    .air-con{
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      order: 1;
+    }
+    #aircondition,
+    #alert{
+      width: 1fr;
+      margin: 0;
+      border-radius: 20px;
+    }
+    .forecast{
+      display: flex;
+      overflow-x: auto;
+    }
+    .seven-days{
+      display: flex;
+      flex-direction: row;
+    }
+    .day{
+      border-radius: 20px;
+    }
+    #monday{
+      border-radius: 20px;
+    }
+    #sunday{
+      border-radius: 20px;
+    }
+  }
