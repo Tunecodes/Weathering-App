@@ -37,5 +37,5 @@
   - **Feature Component:** Card showing current air condition, health advisory text  
 
 - **Sidebar Menu**  
-  - Quick navigation options (e.g., settings, saved locations)  
-  - **Feature Component:** Icon that offers quick navigation/preference changes  
+  - Quick navigation options (Home, Activity, Cloth Suggestion)  
+  - **Feature Component:** toggle bottom that switch between light and dark mode 

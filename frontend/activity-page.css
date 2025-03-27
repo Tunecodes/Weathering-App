@@ -1,0 +1,34 @@
+.container{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 5rem;
+}
+
+/*========= Activities Section======= */
+.activity-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: clamp(50rem, 70vw, 80rem);
+  height: 90%;
+  align-self: center;
+  background-color: rgb(204, 204, 204);
+  border-radius: 20px;
+}
+
+.activity{
+  align-content: center;
+  justify-items: center;
+  border: white solid 1px;
+}
+
+.activity:hover{
+  background-color: white;
+  color: rgb(204, 204, 204);
+}
+
+
+.activity img{
+  display: flex;
+  justify-self: center;
+  width: 45%;
+}

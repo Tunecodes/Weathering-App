@@ -11,9 +11,9 @@ Project Descriptions:
     Key features:
         Hourly & 7-Day Forecast – Provide short-term and long-term weather predictions.
         Severe Weather Alerts – Notify users about storms, hurricanes, heat waves, etc.
-        Customizable Themes & Widgets – Personalize the app’s interface with different themes.
+        Theme toggle – allow users to switch between light and dark mode
         Weather-Based Activity Suggestions – Recommend outdoor activities based on the forecast.
-        Weather preparedness - suggest items to bring depending on weather(e.g. umbrella(when it rains), hat and sunscreen(when its sunny))
+        Weather cloth suggestion - suggest cloths to wear for the weather
     
     Why This Project?
         Weather conditions play an important role in daily life, affecting travel, outdoor activities, health, and safety. 
