@@ -118,27 +118,61 @@ button {
 }
 
 /* Search Bar */
-
-#search-icon {
-  width: 2em;
-  margin-right: 1rem;
-}
-
 .search-con {
-  justify-content: center;
+  width: 20rem;
+  background: rgb(204, 204, 204);
+  color: white;
+  margin: 20px auto 0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column; 
+}
+.row {
+  display: flex;
   align-items: center;
+  padding: 10px 20px;
+  color:white;
+}
+input{
+  flex: 1;
+  height: 50px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 15px;
+  color: white;
+  cursor: text;
+}
+button{
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+button .fa-solid{
+  width: 25px;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+::placeholder{
+  color: white;
 }
 
-#search {
-  cursor: auto;
-  width: clamp(15rem, 35vw, 45rem);
-  height: 2.5rem;
-  background-color: rgb(204, 204, 204);
-  border: none;
-  border-radius: 0.5rem;
-  padding-left: 10px;
+.result-box ul{
+  border-top: 1px solid white;
+  padding: 15px 10px;
+  margin: 0;
 }
-
+.result-box ul li{
+  flex: 2;
+  list-style: none;
+  border-radius: 3px;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+.result-box ul li:hover{
+  background: gray;
+}
 /* City and Temperature Section */
 .city-con {
   padding: 1rem;

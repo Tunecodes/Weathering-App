@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="home-page.css" />
     <link rel="stylesheet" href="mobile-version.css" />
+    <script src="https://kit.fontawesome.com/3ff595e069.js" crossorigin="anonymous"></script>
     <title>Weathering App</title>
   </head>
   <body>
@@ -44,11 +45,16 @@
         <div class="body-grid">
           <!-- Search Box -->
           <div class="search-con">
-            <img id="search-icon" src="/assets/search.png" /><input
-              id="search"
-              type="text"
-              placeholder="Search for a city..."
-            />
+            <div class="row">
+              <input type="text" id="input-box" placeholder="Search for a city..."
+              autocomplete="off">
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="result-box">
+              <ul>
+                <li>Boston, Massachusetts</li>
+              </ul>
+            </div>
           </div>
 
           <!-- Current Weather Section -->
