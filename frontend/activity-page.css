@@ -32,3 +32,50 @@
   justify-self: center;
   width: 45%;
 }
+
+/*========= Mobile-Version======= */
+@media (max-width: 767px){
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+    gap: 1rem;
+  }
+  /* ========== Sidebar Section ========== */
+  .sidebar{
+    order: -1;
+    width: 100%;
+    overflow: hidden;
+  }
+  .sidebar ul{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+  }
+  .sidebar li{
+    margin: 2px;
+  }
+  .side-icon{
+    width: 30px;
+    height: 30px;
+  }
+  /* ========== Activities Section ========== */
+  .activity-container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    gap: 10px;
+    background-color: white;
+  }
+  .activity{
+    border-radius: 15px;
+    background-color: rgb(204, 204, 204);
+  }
+  .activity:hover{
+    background-color: white;
+    color: rgb(204, 204, 204);
+  }
+}
