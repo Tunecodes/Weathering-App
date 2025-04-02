@@ -71,6 +71,7 @@
     background-color: white;
   }
   .suggestion{
+    width: 480px;
     border-radius: 15px;
     background-color: rgb(204, 204, 204);
   }
