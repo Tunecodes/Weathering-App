@@ -63,10 +63,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     //when button is clicked, view should be switched
-    document.getElementById('home').addEventListener('click', () => switchView('home'));
-    document.getElementById('activity').addEventListener('click', () => switchView('activity'));
-    document.getElementById('suggestion').addEventListener('click', () => switchView('suggestion'));
+    document.getElementById('home').addEventListener('click', () => {switchView('home'); setCurrentPage("home")});
+    document.getElementById('activity').addEventListener('click', () => {switchView('activity'); setCurrentPage("activity")});
+    document.getElementById('suggestion').addEventListener('click', () => {switchView('suggestion'); setCurrentPage("suggestion")});
 
     //set initial view to home
     switchView('home');
+    setCurrentPage("home")
 });
+
+function setCurrentPage(page) {
+    localStorage.setItem("currentPage", page)
+}

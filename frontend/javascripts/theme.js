@@ -60,4 +60,58 @@ export class Theme {
       searchRecom.style.backgroundColor = color;
     }
   }
+
+  static activityPage(mode) {
+    const sideBar = document.querySelector(".sidebar");
+    const activities = document.querySelectorAll(".activity");
+    const allElements = document.querySelectorAll("*");
+    const container = document.querySelector(".container");
+
+    if (mode === "dark") {
+      container.style.backgroundColor = "rgb(18,18,18)";
+      sideBar.style.backgroundColor = "rgb(41,41,41)";
+      activities.forEach((activity) => {
+        activity.style.backgroundColor = "rgb(41,41,41)";
+        activity.style.border = "rgb(18,18,18) solid 1px";
+      });
+      allElements.forEach(
+        (element) => (element.style.color = "rgb(155,155,155)")
+      );
+    } else {
+      container.style.backgroundColor = "white";
+      sideBar.style.backgroundColor = "rgb(204, 204, 204)";
+      activities.forEach((activity) => {
+        activity.style.backgroundColor = "rgb(204, 204, 204)";
+        activity.style.border = "white solid 1px";
+      });
+      allElements.forEach((element) => (element.style.color = "white"));
+    }
+  }
+
+  static suggestionPage(mode) {
+    const sideBar = document.querySelector(".sidebar");
+    const activities = document.querySelectorAll(".suggestion");
+    const allElements = document.querySelectorAll("*");
+    const container = document.querySelector(".container");
+
+    if (mode === "dark") {
+      container.style.backgroundColor = "rgb(18,18,18)";
+      sideBar.style.backgroundColor = "rgb(41,41,41)";
+      activities.forEach((activity) => {
+        activity.style.backgroundColor = "rgb(41,41,41)";
+        activity.style.border = "rgb(18,18,18) solid 1px";
+      });
+      allElements.forEach(
+        (element) => (element.style.color = "rgb(155,155,155)")
+      );
+    } else {
+      container.style.backgroundColor = "white";
+      sideBar.style.backgroundColor = "rgb(204, 204, 204)";
+      activities.forEach((activity) => {
+        activity.style.backgroundColor = "rgb(204, 204, 204)";
+        activity.style.border = "white solid 1px";
+      });
+      allElements.forEach((element) => (element.style.color = "white"));
+    }
+  }
 }

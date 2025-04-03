@@ -1,4 +1,3 @@
-
 class EventHub {
   constructor() {
     this.events = {};
@@ -13,7 +12,7 @@ class EventHub {
 
   update(eventName, data) {
     if (this.events[eventName]) {
-      this.events[eventName].forEach(callback => callback(data));
+      this.events[eventName].forEach((callback) => callback(data));
     }
   }
 }
