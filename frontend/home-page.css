@@ -9,7 +9,6 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr 2fr;
-  height: 100vh;
   color: white;
 }
 
@@ -93,7 +92,7 @@ button:hover{
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
   top: 50%;
   left: 4px;
@@ -103,7 +102,7 @@ button:hover{
 
 /* When the checkbox is checked */
 .toggle input:checked + .slider {
-  background-color: #000000;
+  background-color: rgb(18,18,18);
 }
 
 .toggle input:checked + .slider::before {
