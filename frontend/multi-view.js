@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
             bodyContainer.innerHTML = originalBodyContent;
             forecastContainer.innerHTML = originalForecastContent; 
 
-            bodyContainer.style.display = 'flex';
-            forecastContainer.style.display = 'flex';
+            bodyContainer.style.display = 'block';
+            forecastContainer.style.display = 'block';
             return;
         }
 
